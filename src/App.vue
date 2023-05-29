@@ -1,6 +1,6 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Playlist Generator Logo" src="./assets/SPGLogo.png">
+  <HelloWorld msg="Welcome to your personal Playlist Generator!"/>
 </template>
 
 <script>
