@@ -1,18 +1,10 @@
 <template>
-  <img alt="Playlist Generator Logo" src="./assets/SPGLogo.png">
-  <HelloWorld msg="Welcome to your personal Playlist Generator!"/>
+  <nav>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+  </nav>
+  <router-view/>
 </template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
 <style>
 #app {
