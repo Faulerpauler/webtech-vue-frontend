@@ -1,7 +1,7 @@
 <template>
   <div class="archive">
     <h1>These playlists have been generated so far</h1>
-    <h1>Playlists</h1>
+    <div class="table-container">
     <table>
       <thead>
       <tr>
@@ -16,6 +16,7 @@
       </tr>
       </tbody>
     </table>
+    </div>
   </div>
 </template>
 
@@ -23,11 +24,10 @@
 export default {
   data() {
     return {
-      playlists: [] // Initialize playlists as an empty array
+      playlists: []
     };
   },
   created() {
-    // Perform the GET request to fetch the playlists
     this.fetchPlaylists();
   },
   methods: {
@@ -42,3 +42,15 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.archive {
+  text-align: center;
+}
+
+.table-container {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+}
+</style>
